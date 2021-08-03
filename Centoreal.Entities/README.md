@@ -3,3 +3,4 @@
 
 `Add-Migration DatabaseCreated`
 `Update-Database`
+`Add-Migration SeedingData`
