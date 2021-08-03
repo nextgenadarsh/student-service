@@ -5,7 +5,6 @@ using Microsoft.Identity.Web.Resource;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace Centoreal.StudentService.Controllers
 {
@@ -32,6 +31,8 @@ namespace Centoreal.StudentService.Controllers
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {
+            _logger.LogInformation("Weather is cool");
+
             HttpContext.VerifyUserHasAnyAcceptedScope(scopeRequiredByApi);
 
             var rng = new Random();
